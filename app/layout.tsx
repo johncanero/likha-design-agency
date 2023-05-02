@@ -15,6 +15,11 @@ const poppins = Poppins({
 export const metadata = {
   title: 'Likha Design Agency',
   description: 'A Creative and Design Branding Agency',
+  keywords: 'likha, design, agency, creative, branding',
+  icons: {
+    icon: '/images/likhaLogo.png',
+    shortcut: '/images/likhaLogo.png',
+  },
 }
 
 export default function RootLayout({
@@ -26,7 +31,7 @@ export default function RootLayout({
     <html lang="en">
       {/* Dark Mode: Providers Component */}
       <Providers>
-        <body className='transition-all duration-700  bg-amber-50 dark:bg-stone-900'>
+        <body className='transition-all duration-700 bg-amber-50 dark:bg-stone-900'>
           <div className={poppins.className}>
             <Header />
             <div>

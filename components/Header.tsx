@@ -11,7 +11,7 @@ function Header() {
                     {/* Likha Desig nAgency - Brand Logo & Name */}
                     <div>
                         <Link href="/" rel="noopener noreferrer" className='flex gap-2'>
-                            <Image src="/images/desktop/likhaLogo.png"
+                            <Image src="/images/likhaLogo.png"
                                 alt="bg-pattern-wave-amber"
                                 width={40}
                                 height={10}
