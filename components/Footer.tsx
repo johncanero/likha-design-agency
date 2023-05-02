@@ -7,7 +7,7 @@ function Footer() {
         <footer className='fixed bottom-0 left-0 w-full py-4'>
             <div>
                 {/* "Let's build something great together" */}
-                <div className="flex py-10 lg:mr-60 lg:gap-40">
+                <div className="flex py-10 lg:mr-28 lg:gap-48">
                     {/* Image */}
                     <div className="relative lg:w-32 lg:right-16 lg:top-8">
                         <Image src="/images/desktop/bg-pattern-wave-yellow.png"
@@ -17,7 +17,7 @@ function Footer() {
                         >
                         </Image>
                     </div>
-                    <h2 className="text-6xl font-bold lg:w-6/12">Let's build something great together.</h2>
+                    <h2 className="text-5xl font-semibold lg:w-5/12">Let's build something great together.</h2>
                     <Link href="/schedule-call">
                         <button className="px-8 py-5 font-bold text-amber-50 rounded-xl bg-stone-900 hover:bg-stone-700">
                             Schedule A Call

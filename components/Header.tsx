@@ -8,9 +8,15 @@ function Header() {
             <nav className='lg:px-80 lg:py-14'>
                 <div className="container flex items-center justify-between mx-auto">
                     {/* Likha Desig nAgency - Brand Logo & Name */}
-                    <div className='flex'>
-                        <Link href="/" rel="noopener noreferrer" >
-                            <p className='text-3xl font-bold'>Likha</p>
+                    <div>
+                        <Link href="/" rel="noopener noreferrer" className='flex gap-2'>
+                            <Image src="/images/desktop/likhaLogo.png"
+                                alt="bg-pattern-wave-amber"
+                                width={40}
+                                height={10}
+                            >
+                            </Image>
+                            <p className='text-4xl font-bold'>Likha</p>
                         </Link>
                     </div>
 
