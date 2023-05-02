@@ -8,7 +8,7 @@ export default function Home() {
     <div>
       {/* Landing Page */}
       <h1 className="p-6 text-3xl font-bold text-center underline">
-        Likha Design Agency
+        {/* Likha Design Agency */}
       </h1>
     </div>
   )

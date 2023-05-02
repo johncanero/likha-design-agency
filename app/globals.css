@@ -2,6 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Navbar */
 nav {
     background-image: -webkit-gradient(
         linear,
