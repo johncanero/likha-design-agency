@@ -1,4 +1,7 @@
-import React from 'react'
+export const metadata = {
+    title: 'Likha / Schedule A Call',
+    description: 'A Creative and Design Branding Agency',
+  }
 
 function page() {
     return (
