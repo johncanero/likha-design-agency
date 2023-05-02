@@ -4,10 +4,10 @@ import Image from "next/image"
 
 function Footer() {
     return (
-        <footer className='fixed bottom-0 left-0 w-full py-4'>
+        <footer className='bottom-0 left-0 w-full py-4'>
             <div>
                 {/* "Let's build something great together" */}
-                <div className="flex justify-center lg:justify-normal md:py-6 md:gap-12 lg:py-10 lg:mr-28 lg:gap-52">
+                <div className="flex justify-center lg:justify-normal md:py-6 md:gap-12 lg:py-10 lg:mr-36 lg:gap-52">
                     {/* Image */}
                     <div className="relative md:w-20 md:top-4 md:right-14 lg:w-32 lg:right-16 lg:top-8">
                         <Image src="/images/desktop/bg-pattern-wave-yellow.png"
