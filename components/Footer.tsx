@@ -7,7 +7,7 @@ function Footer() {
         <footer className='bottom-0 left-0 w-full py-4'>
             <div>
                 {/* "Let's build something great together" */}
-                <div className="flex justify-center lg:justify-normal md:py-6 md:gap-8 lg:py-10 lg:mr-36 lg:gap-52">
+                <div className="flex justify-center lg:justify-normal md:py-6 md:gap-8 lg:py-10 lg:mr-40 lg:gap-48">
                     <div className="relative w-16 right-16 top-3 md:w-20 md:top-4 md:right-14 lg:w-32 lg:right-16 lg:top-8">
                         <Image src="/images/desktop/bg-pattern-wave-yellow.png"
                             alt="bg-pattern-wave-amber"
@@ -18,7 +18,7 @@ function Footer() {
                     </div>
                     <h2 className="w-8/12 text-xl font-semibold md:text-3xl md:w-6/12 lg:text-5xl lg:w-5/12">Let's build something great together.</h2>
                     <Link href="/schedule-call" className="hidden md:block">
-                        <button className="font-bold md:px-4 md:py-3 lg:px-8 lg:py-5 rounded-xl text-amber-50 bg-stone-900 hover:bg-stone-700">
+                        <button className="font-bold border-2 md:px-4 md:py-3 lg:px-8 lg:py-5 rounded-xl text-amber-50 bg-stone-900 border-stone-700 hover:bg-stone-800">
                             Schedule A Call
                         </button>
                     </Link>
@@ -31,7 +31,7 @@ function Footer() {
                         rel="noopener noreferrer"
                         href="https://johncanero.com/"
                     >
-                        <span className="mr-2 font-bold text-zinc-900 dark:text-cyan-300">
+                        <span className="mr-2 font-bold dark:text-amber-300">
                             John Cañero
                         </span>
                     </Link>

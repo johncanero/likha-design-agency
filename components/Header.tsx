@@ -1,10 +1,12 @@
 import Link from 'next/link'
 import Image from 'next/image'
+// Dark Mode Button
+import DarkModeButton from './DarkModeButton'
 
 function Header() {
     return (
         <div>
-            <nav className='px-5 py-5 md:px-10 md:py-7 lg:px-80 lg:py-14'>
+            <nav className='px-6 py-6 md:px-10 md:py-7 lg:px-80 lg:py-14'>
                 <div className="container flex items-center justify-between mx-auto">
                     {/* Likha Desig nAgency - Brand Logo & Name */}
                     <div>
@@ -15,22 +17,27 @@ function Header() {
                                 height={10}
                             >
                             </Image>
-                            <p className='text-4xl font-bold'>Likha</p>
+                            <p className='text-4xl font-bold dark:text-white lg:dark:text-black'>Likha</p>
                         </Link>
                     </div>
 
-                    {/* Desktop and Tablet */}
-                    <div className='hidden md:flex md:gap-6 lg:gap-12'>
-                        <Link href="/about" rel="noopener noreferrer" className='mt-4 font-medium hover:text-stone-700' passHref>About</Link>
-                        <Link href="/service" rel="noopener noreferrer" className='mt-4 font-medium hover:text-stone-700' passHref>Service</Link>
-                        <Link href="/projects" rel="noopener noreferrer" className='mt-4 font-medium hover:text-stone-700' passHref>Projects</Link>
-                        <Link href="/schedule-call">
-                            <button className="font-bold md:px-4 md:py-3 lg:px-8 lg:py-5 rounded-xl text-amber-50 bg-stone-900 hover:bg-stone-700">
-                                Schedule A Call
-                            </button>
-                        </Link>
-                        {/* Dark Mode Button */}
-                        {/* NextAuth Sign In / Login / */}
+                    <div className='flex'>
+                        {/* Desktop and Tablet */}
+                        <div className='hidden md:flex md:gap-6 lg:gap-12'>
+                            <Link href="/about" rel="noopener noreferrer" className='mt-4 font-medium text-black hover:text-stone-700' passHref>About</Link>
+                            <Link href="/service" rel="noopener noreferrer" className='mt-4 font-medium text-black hover:text-stone-700' passHref>Service</Link>
+                            <Link href="/projects" rel="noopener noreferrer" className='mt-4 font-medium text-black hover:text-stone-700' passHref>Projects</Link>
+                            <Link href="/schedule-call">
+                                <button className="font-bold md:px-4 md:py-3 lg:px-8 lg:py-5 rounded-xl text-amber-50 bg-stone-900 hover:bg-stone-800">
+                                    Schedule A Call
+                                </button>
+                            </Link>
+                        </div>
+
+                        <div>
+                            <DarkModeButton />
+                            {/* NextAuth Sign In / Login / */}
+                        </div>
                     </div>
                 </div>
             </nav>

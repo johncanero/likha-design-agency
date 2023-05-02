@@ -1,0 +1,35 @@
+'use client';
+import { useTheme } from 'next-themes';
+import { useState, useEffect } from 'react';
+import { SunIcon, MoonIcon } from '@heroicons/react/24/solid';
+function DarkModeButton() {
+	const [mounted, setMounted] = useState(false);
+	const { systemTheme, theme, setTheme } = useTheme();
+
+	useEffect(() => {
+		setMounted(true);
+	}, []);
+
+	if (!mounted) {
+		return null;
+	}
+
+	const currentTheme = theme === 'system' ? systemTheme : theme;
+	return (
+		<div className='md:ml-4 md:mt-4 lg:ml-5'>
+			{currentTheme === 'light' ? (
+				<MoonIcon
+					className="w-6 h-6 cursor-pointertext-stone-700 hover:ring-2 hover:ring-gray-300"
+					onClick={() => setTheme('dark')}
+				/>
+			) : (
+
+				<SunIcon
+					className="w-6 h-6 cursor-pointer md:text-stone-700 hover:ring-2 hover:ring-gray-300"
+					onClick={() => setTheme('light')}
+				/>
+			)}
+		</div>
+	);
+}
+export default DarkModeButton;
