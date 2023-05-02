@@ -9,14 +9,14 @@ function Header() {
                 {/* Likha Desig nAgency - Brand Logo & Name */}
                 <div className='flex'>
                     <Link href="/" rel="noopener noreferrer" >
-                        <p className='text-2xl font-bold'>Likha</p>
+                        <p className='text-3xl font-bold'>Likha</p>
                     </Link>
                 </div>
 
                 <div className='flex gap-12'>
-                    <Link href="/about" rel="noopener noreferrer" className='mt-4 font-medium' passHref>About</Link>
-                    <Link href="/service" rel="noopener noreferrer" className='mt-4 font-medium' passHref>Service</Link>
-                    <Link href="/projects" rel="noopener noreferrer" className='mt-4 font-medium' passHref>Projects</Link>
+                    <Link href="/about" rel="noopener noreferrer" className='mt-4 font-medium hover:text-stone-700' passHref>About</Link>
+                    <Link href="/service" rel="noopener noreferrer" className='mt-4 font-medium hover:text-stone-700' passHref>Service</Link>
+                    <Link href="/projects" rel="noopener noreferrer" className='mt-4 font-medium hover:text-stone-700' passHref>Projects</Link>
                     <Link href="/schedule-call">
                         <button className="px-8 py-5 font-bold text-amber-50 bg-stone-900 hover:bg-stone-700">
                             Schedule A Call
