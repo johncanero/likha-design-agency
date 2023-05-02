@@ -1,20 +1,37 @@
 import React from 'react'
+import Link from 'next/link'
+import Image from 'next/image'
 
 function Header() {
     return (
-        <div>
-            <div className='p-6 text-center'>
-                Header
-            </div>
-            {/* Coding Guide */}
-            {/* Add Logo of Likha Design Agency */}
-            {/* Add About Link Page of Likha Design Agency */}
-            {/* Add Service Link Page of Likha Design Agency */}
-            {/* Add Projects Link Page of Likha Design Agency */}
-            {/* Add Schedule A Call Button from Calendly of Likha Design Agency */}
+        <nav>
+            <div className='flex justify-between'>
+                {/* Likha Design Agency - Brand Logo & Name */}
+                <div className='flex'>
+                    <Image
+                        src=""
+                        alt="Likha Design Agency Brand Logo"
+                        width={100}
+                        height={100}
+                    ></Image>
+                    <p>Likha</p>
+                </div>
 
+                <div className='flex'>
+                    <Link href="/" rel="noopener noreferrer" passHref>About</Link>
+                    <Link href="/" rel="noopener noreferrer" passHref>Service</Link>
+                    <Link href="/" rel="noopener noreferrer" passHref>Projects</Link>
+                    {/* Schedule A Call Button */}
+                    <Link href="/schedule-call">
+                        <button className="px-4 py-2 font-bold text-yellow-600 rounded bg-stone-900 hover:bg-stone-700">
+                            Schedule A Call
+                        </button>
+                    </Link>
+                    {/* Dark Mode Button */}
+                </div>
+            </div>
             {/* Integrate NextAuth Sign In / Login / */}
-        </div>
+        </nav>
     )
 }
 
