@@ -4,19 +4,21 @@ import Image from 'next/image'
 
 function Header() {
     return (
-        <nav className="bg-gradient-to-r from-white from-40% to-yellow-500">
-            <div className="container flex items-center justify-between p-12 mx-auto">
-                {/* Likha Design Agency - Brand Logo & Name */}
+        <nav className='lg:px-72 lg:py-16'>
+            <div className="container flex items-center justify-between mx-auto">
+                {/* Likha Desig nAgency - Brand Logo & Name */}
                 <div className='flex'>
-                    <p>Likha Design Agency</p>
+                    <Link href="/" rel="noopener noreferrer" >
+                        <p className='text-2xl font-bold'>Likha</p>
+                    </Link>
                 </div>
 
-                <div className='flex'>
-                    <Link href="/" rel="noopener noreferrer" passHref>About</Link>
-                    <Link href="/" rel="noopener noreferrer" passHref>Service</Link>
-                    <Link href="/" rel="noopener noreferrer" passHref>Projects</Link>
+                <div className='flex gap-12'>
+                    <Link href="/about" rel="noopener noreferrer" className='mt-4 font-medium' passHref>About</Link>
+                    <Link href="/service" rel="noopener noreferrer" className='mt-4 font-medium' passHref>Service</Link>
+                    <Link href="/projects" rel="noopener noreferrer" className='mt-4 font-medium' passHref>Projects</Link>
                     <Link href="/schedule-call">
-                        <button className="px-4 py-2 font-bold text-yellow-600 rounded bg-stone-900 hover:bg-stone-700">
+                        <button className="px-8 py-5 font-bold text-amber-50 bg-stone-900 hover:bg-stone-700">
                             Schedule A Call
                         </button>
                     </Link>

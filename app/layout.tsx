@@ -3,9 +3,13 @@ import './globals.css'
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
 // Google Fonts
-import { Inter } from 'next/font/google'
+import { Poppins } from 'next/font/google'
 
-const inter = Inter({ subsets: ['latin'] })
+// Install npm @next/font 
+const poppins = Poppins({
+  subsets: ['latin'],
+  weight: ['100', '200', '300', '400', '500', '700', '800', '900'],
+})
 
 export const metadata = {
   title: 'Likha Design Agency',
@@ -20,12 +24,14 @@ export default function RootLayout({
   return (
     <html lang="en">
       {/* Dark Mode Providers */}
-      <body className={inter.className}>
-        <Header />
-        <div>
-          {children}
+      <body>
+        <div className={poppins.className}>
+          <Header />
+          <div>
+            {children}
+          </div>
+          <Footer />
         </div>
-        <Footer />
       </body>
     </html>
   )
