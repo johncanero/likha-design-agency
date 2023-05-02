@@ -5,7 +5,7 @@ function Header() {
     return (
         <div>
             {/* Desktop and Tablet */}
-            <nav className='lg:px-80 lg:py-14'>
+            <nav className='md:px-10 md:py-7 lg:px-80 lg:py-14'>
                 <div className="container flex items-center justify-between mx-auto">
                     {/* Likha Desig nAgency - Brand Logo & Name */}
                     <div>
@@ -20,12 +20,12 @@ function Header() {
                         </Link>
                     </div>
 
-                    <div className='flex gap-12'>
+                    <div className='flex md:gap-6 lg:gap-12'>
                         <Link href="/about" rel="noopener noreferrer" className='mt-4 font-medium hover:text-stone-700' passHref>About</Link>
                         <Link href="/service" rel="noopener noreferrer" className='mt-4 font-medium hover:text-stone-700' passHref>Service</Link>
                         <Link href="/projects" rel="noopener noreferrer" className='mt-4 font-medium hover:text-stone-700' passHref>Projects</Link>
                         <Link href="/schedule-call">
-                            <button className="px-8 py-5 font-bold rounded-xl text-amber-50 bg-stone-900 hover:bg-stone-700">
+                            <button className="font-bold md:px-4 md:py-3 lg:px-8 lg:py-5 rounded-xl text-amber-50 bg-stone-900 hover:bg-stone-700">
                                 Schedule A Call
                             </button>
                         </Link>
