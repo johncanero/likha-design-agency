@@ -1,56 +1,42 @@
-import Image from 'next/image'
-import Link from 'next/link'
+/* eslint-disable react/no-unescaped-entities */
+import Hero from '@/components/Hero'
+import Image from "next/image"
+import Link from "next/link"
 
 export default function Home() {
   return (
     <div>
-      {/* Hero Section*/}
-      <div className='mb-12 md:flex md:justify-between'>
-        {/* Mobile Hero Image*/}
-        <div className='block md:hidden'>
-          <Image src="/images/mobile/image-hero-mobile.jpg"
-            alt="bg-pattern-wave-amber"
-            width={1400}
-            height={1400}
-          >
-          </Image>
-        </div>
+      <Hero />
 
-        <div className='max-w-xs mx-6 mt-8 md:mt-10 md:mx-0 md:ml-10 lg:ml-80 lg:mt-24 md:max-w-lg lg:max-w-xl lg:mr-10'>
-          <h2 className='text-4xl font-bold md:pr-4 lg:pr-0 md:text-5xl lg:text-7xl'>Branding & website design agency</h2>
-          <p className='mt-5 lg:mt-7 md:text-sm lg:text-base md:mr-8 lg:mr-0'>We specialize in visual storytelling by creating cohesive brand and website design solutions for small businesses, giving lasting impressions to audiences in a digital world.</p>
-          <Link href="/">
-            <button className="px-4 py-3 mt-6 font-bold border-2 lg:px-7 lg:mt-6 lg:py-4 rounded-xl text-amber-50 border-stone-700 bg-stone-900 hover:bg-stone-800">
-              Learn More
-            </button>
-          </Link>
-        </div>
 
-        {/* Desktop Hero Image */}
-        <div className='hidden lg:block'>
-          <Image src="/images/desktop/image-hero-desktop3-min.jpg"
-            alt="bg-pattern-wave-amber"
-            width={1400}
-            height={1400}
-          >
-          </Image>
-        </div>
+      {/* Design is Strategic Section */}
+      <div>
+        <div className='md:flex md:justify-between'>
+          {/* Desktop Hero Image */}
+          <div className='hidden lg:block'>
+            <Image src="/images/desktop/image-strategic.jpg"
+              alt="bg-pattern-wave-amber"
+              width={1600}
+              height={1600}
+            >
+            </Image>
+          </div>
 
-        {/* Tablet Hero Image */}
-        <div className='hidden md:block lg:hidden'>
-          <Image src="/images/tablet/image-hero-md2.jpg"
-            alt="bg-pattern-wave-amber"
-            width={1100}
-            height={1100}
-          >
-          </Image>
+
+          {/* Design is Strategic */}
+          <div className='md:w-full bg-stone-800'>
+            <div className='text-white lg:p-32'>
+              <p className='font-bold leading-10 lg:text-6xl lg:w-96'><span className='text-amber-300'>Design</span> is strategic.</p>
+              <p className='leading-8 lg:w-9/12 lg:mt-16 lg:text-lg'>"A well-crafted design strategy consistently produces desired outcomes and brand awareness. We are firm believers that success lies in creative collaboration with our clients."</p>
+              <Link href="/" rel="noopener noreferrer" passHref>
+                <p className='font-semibold tracking-wider underline underline-offset-8 lg:text-lg lg:mt-16 text-amber-300'>Schedule A Call</p>
+              </Link>
+            </div>
+          </div>
         </div>
       </div>
 
 
-
-
-      {/* Design is Strategic Section */}
     </div>
   )
 }
