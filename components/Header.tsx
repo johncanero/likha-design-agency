@@ -25,10 +25,10 @@ function Header() {
                     <div className='flex'>
                         {/* Desktop and Tablet */}
                         <div className='hidden md:flex md:gap-6 lg:gap-12'>
-                            <Link href="/about" rel="noopener noreferrer" className='mt-4 font-medium text-black hover:text-stone-700' passHref>About</Link>
-                            <Link href="/service" rel="noopener noreferrer" className='mt-4 font-medium text-black hover:text-stone-700' passHref>Service</Link>
-                            <Link href="/projects" rel="noopener noreferrer" className='mt-4 font-medium text-black hover:text-stone-700' passHref>Projects</Link>
-                            <Link href="/schedule-call">
+                            <Link href="/" rel="noopener noreferrer" className='mt-4 font-medium text-black hover:text-stone-700' passHref>About</Link>
+                            <Link href="/" rel="noopener noreferrer" className='mt-4 font-medium text-black hover:text-stone-700' passHref>Service</Link>
+                            <Link href="/" rel="noopener noreferrer" className='mt-4 font-medium text-black hover:text-stone-700' passHref>Projects</Link>
+                            <Link href="/">
                                 <button className="font-bold md:px-4 md:py-3 lg:px-8 lg:py-5 rounded-xl text-amber-50 bg-stone-900 border-stone-700 hover:bg-stone-800">
                                     Schedule A Call
                                 </button>
