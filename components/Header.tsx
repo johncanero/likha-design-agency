@@ -18,7 +18,7 @@ function Header() {
                                 height={10}
                             >
                             </Image>
-                            <p className='text-4xl font-bold dark:text-white lg:dark:text-black'>Likha</p>
+                            <h1 className='text-4xl font-bold dark:text-white lg:dark:text-black'>Likha</h1>
                         </Link>
                     </div>
 

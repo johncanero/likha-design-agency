@@ -3,8 +3,7 @@
 @tailwind utilities;
 
 /* Desktop */
-/* Tablet */
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
     nav {
       background-image: -webkit-gradient(
           linear,
@@ -18,5 +17,23 @@
       background-image: -webkit-linear-gradient(right, #fffbeb 40%, #fcd34d 40%);
       background-image: -ms-linear-gradient(right, #fffbeb 40%, #fcd34d 40%);
       background-image: linear-gradient(to right, #fffbeb 40%, #fcd34d 40%);
+    }
+  }
+
+/* Tablet */
+  @media (min-width: 768px) {
+    nav {
+      background-image: -webkit-gradient(
+          linear,
+          left top,
+          right top,
+          color-stop(0.5, #fffbeb),
+          color-stop(0.5, #fcd34d)
+      );
+      background-image: -o-linear-gradient(right, #fffbeb 35%, #fcd34d 35%);
+      background-image: -moz-linear-gradient(right, #fffbeb 35%, #fcd34d 35%);
+      background-image: -webkit-linear-gradient(right, #fffbeb 35%, #fcd34d 35%);
+      background-image: -ms-linear-gradient(right, #fffbeb 35%, #fcd34d 35%);
+      background-image: linear-gradient(to right, #fffbeb 35%, #fcd34d 35%);
     }
   }

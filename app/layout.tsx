@@ -32,7 +32,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <Providers>
-        <body className='transition-all duration-700 bg-amber-50 dark:bg-stone-900'>
+        <body className='transition-all duration-700 bg-yellow-50 dark:bg-stone-900'>
           <div className={poppins.className}>
             <Header />
             <div>
