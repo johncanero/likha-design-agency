@@ -16,7 +16,7 @@ function Hero() {
                     </Image>
                 </div>
 
-                <div className='max-w-xs mx-6 mt-8 md:mt-10 md:mx-0 md:ml-10 lg:ml-80 lg:mt-24 md:max-w-lg lg:max-w-xl lg:mr-10'>
+                <div className='max-w-sm px-6 mt-8 md:mt-10 md:mx-0 md:ml-10 lg:ml-80 lg:mt-24 md:max-w-lg lg:max-w-xl lg:mr-10'>
                     <h2 className='text-4xl font-bold md:pr-4 lg:pr-0 md:text-5xl lg:text-7xl'>Branding & website design agency</h2>
                     <p className='mt-5 lg:mt-7 md:text-sm lg:text-lg md:mr-8 lg:mr-0'>We specialize in visual storytelling by creating cohesive brand and website design solutions for small businesses, giving lasting impressions to audiences in a digital world.</p>
                     <Link href="/" rel="noopener noreferrer" passHref>
