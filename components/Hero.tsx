@@ -18,7 +18,7 @@ function Hero() {
 
                 <div className='max-w-xs mx-6 mt-8 md:mt-10 md:mx-0 md:ml-10 lg:ml-80 lg:mt-24 md:max-w-lg lg:max-w-xl lg:mr-10'>
                     <h2 className='text-4xl font-bold md:pr-4 lg:pr-0 md:text-5xl lg:text-7xl'>Branding & website design agency</h2>
-                    <p className='mt-5 lg:mt-7 md:text-sm lg:text-base md:mr-8 lg:mr-0'>We specialize in visual storytelling by creating cohesive brand and website design solutions for small businesses, giving lasting impressions to audiences in a digital world.</p>
+                    <p className='mt-5 lg:mt-7 md:text-sm lg:text-lg md:mr-8 lg:mr-0'>We specialize in visual storytelling by creating cohesive brand and website design solutions for small businesses, giving lasting impressions to audiences in a digital world.</p>
                     <Link href="/" rel="noopener noreferrer" passHref>
                         <button className="px-4 py-3 mt-6 font-bold border-2 lg:px-7 lg:mt-6 lg:py-4 rounded-xl text-amber-50 border-stone-700 bg-stone-900 hover:bg-stone-800">
                             Learn More
