@@ -21,7 +21,7 @@
   }
 
 /* Tablet */
-  @media (min-width: 768px) {
+  @media (min-width: 768px) and (max-device-width: 1023px)  {
     nav {
       background-image: -webkit-gradient(
           linear,
@@ -30,10 +30,12 @@
           color-stop(0.5, #fffbeb),
           color-stop(0.5, #fcd34d)
       );
-      background-image: -o-linear-gradient(right, #fffbeb 35%, #fcd34d 35%);
-      background-image: -moz-linear-gradient(right, #fffbeb 35%, #fcd34d 35%);
-      background-image: -webkit-linear-gradient(right, #fffbeb 35%, #fcd34d 35%);
-      background-image: -ms-linear-gradient(right, #fffbeb 35%, #fcd34d 35%);
-      background-image: linear-gradient(to right, #fffbeb 35%, #fcd34d 35%);
+      background-image: -o-linear-gradient(right, #fffbeb 34%, #fcd34d 34%);
+      background-image: -moz-linear-gradient(right, #fffbeb 34%, #fcd34d 34%);
+      background-image: -webkit-linear-gradient(right, #fffbeb 34%, #fcd34d 34%);
+      background-image: -ms-linear-gradient(right, #fffbeb 34%, #fcd34d 34%);
+      background-image: linear-gradient(to right, #fffbeb 34%, #fcd34d 34%);
     }
   }
+
+
