@@ -2,6 +2,7 @@ import './globals.css'
 // Components
 import Header from '@/components/Header'
 import Footer from '@/components/Footer'
+// Dark Mode: Providers
 import Providers from '@/components/Providers'
 // Google Fonts
 import { Poppins } from 'next/font/google'
@@ -27,9 +28,9 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+  
   return (
     <html lang="en">
-      {/* Dark Mode: Providers Component */}
       <Providers>
         <body className='transition-all duration-700 bg-amber-50 dark:bg-stone-900'>
           <div className={poppins.className}>

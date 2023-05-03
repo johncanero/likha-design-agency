@@ -1,5 +1,6 @@
 import Link from 'next/link'
 import Image from 'next/image'
+import MobileDropdown from './MobileDropdown'
 // Dark Mode Button
 import DarkModeButton from './DarkModeButton'
 
@@ -34,8 +35,9 @@ function Header() {
                             </Link>
                         </div>
 
-                        <div>
+                        <div className='flex'>
                             <DarkModeButton />
+                            <MobileDropdown />
                             {/* NextAuth Sign In / Login / */}
                         </div>
                     </div>
