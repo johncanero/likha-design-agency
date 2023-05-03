@@ -25,7 +25,7 @@ function DarkModeButton() {
 			) : (
 
 				<SunIcon
-					className="w-6 h-6 cursor-pointer md:text-stone-700"
+					className="w-6 h-6 cursor-pointer text-amber-300 md:text-stone-700"
 					onClick={() => setTheme('light')}
 				/>
 			)}

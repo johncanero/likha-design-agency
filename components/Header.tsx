@@ -35,7 +35,7 @@ function Header() {
                             </Link>
                         </div>
 
-                        <div className='flex'>
+                        <div className='flex gap-3 md:mt-0 md:gap-0'>
                             <DarkModeButton />
                             <MobileDropdown />
                             {/* NextAuth Sign In / Login / */}

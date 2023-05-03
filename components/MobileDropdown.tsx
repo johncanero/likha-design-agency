@@ -18,7 +18,7 @@ function MobileDropdown() {
   }, []);
 
   return (
-    <div className="block pb-4 md:hidden">
+    <div className="block md:hidden">
       <div>
         <div className="flex">
           <Menu as="div" className="relative inline-block text-left">
