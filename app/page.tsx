@@ -6,9 +6,9 @@ export default function Home() {
     <div>
       {/* Hero Section*/}
       <div className='mb-12 md:flex md:justify-between'>
-        {/* Mobile */}
+        {/* Mobile Hero Image*/}
         <div className='block md:hidden'>
-          <Image src="/images/desktop/image-hero-desktop3-min.jpg"
+          <Image src="/images/mobile/image-hero-mobile.jpg"
             alt="bg-pattern-wave-amber"
             width={1400}
             height={1400}
@@ -16,7 +16,7 @@ export default function Home() {
           </Image>
         </div>
 
-        <div className='max-w-xs mx-6 mt-12 md:mx-0 md:ml-10 lg:ml-80 lg:mt-24 md:max-w-lg lg:max-w-xl lg:mr-10'>
+        <div className='max-w-xs mx-6 mt-8 md:mt-10 md:mx-0 md:ml-10 lg:ml-80 lg:mt-24 md:max-w-lg lg:max-w-xl lg:mr-10'>
           <h2 className='text-4xl font-bold md:pr-4 lg:pr-0 md:text-5xl lg:text-7xl'>Branding & website design agency</h2>
           <p className='mt-5 lg:mt-7 md:text-sm lg:text-base md:mr-8 lg:mr-0'>We specialize in visual storytelling by creating cohesive brand and website design solutions for small businesses, giving lasting impressions to audiences in a digital world.</p>
           <Link href="/">
@@ -26,7 +26,7 @@ export default function Home() {
           </Link>
         </div>
 
-        {/* Desktop */}
+        {/* Desktop Hero Image */}
         <div className='hidden lg:block'>
           <Image src="/images/desktop/image-hero-desktop3-min.jpg"
             alt="bg-pattern-wave-amber"
@@ -36,7 +36,7 @@ export default function Home() {
           </Image>
         </div>
 
-        {/* Tablet */}
+        {/* Tablet Hero Image */}
         <div className='hidden md:block lg:hidden'>
           <Image src="/images/tablet/image-hero-md2.jpg"
             alt="bg-pattern-wave-amber"
