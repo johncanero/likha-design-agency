@@ -7,7 +7,7 @@ function Footer() {
         <footer className='bottom-0 left-0 w-full py-4'>
             <div>
                 {/* "Let's build something great together" */}
-                <div className="flex justify-center lg:justify-normal md:py-6 md:gap-8 lg:py-10 lg:mr-44 lg:gap-48">
+                <div className="flex justify-center lg:justify-normal md:py-6 md:gap-4 md:mr-12 lg:py-10 lg:mr-44 lg:gap-48">
                     <div className="relative w-16 right-16 top-3 md:w-20 md:top-4 md:right-14 lg:w-32 lg:right-16 lg:top-8">
                         <Image src="/images/desktop/bg-pattern-wave-yellow.png"
                             alt="bg-pattern-wave-amber"

@@ -29,7 +29,7 @@ function Header() {
                             <Link href="/service" rel="noopener noreferrer" className='mt-4 font-medium text-black hover:text-stone-700' passHref>Service</Link>
                             <Link href="/projects" rel="noopener noreferrer" className='mt-4 font-medium text-black hover:text-stone-700' passHref>Projects</Link>
                             <Link href="/schedule-call">
-                                <button className="font-bold md:px-4 md:py-3 lg:px-8 lg:py-5 rounded-xl text-amber-50 bg-stone-900 hover:bg-stone-800">
+                                <button className="font-bold md:px-4 md:py-3 lg:px-8 lg:py-5 rounded-xl text-amber-50 bg-stone-900 border-stone-700 hover:bg-stone-800">
                                     Schedule A Call
                                 </button>
                             </Link>
