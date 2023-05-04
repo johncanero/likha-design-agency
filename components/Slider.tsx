@@ -1,8 +1,6 @@
 'use client'
 import React, { useState } from 'react'
 import Image from 'next/image';
-// Slider Files
-import IconArrowNext from "public/images/desktop/icon-arrow-next.svg";
 // Desktop 
 import ImageSlide1 from "public/images/desktop/image-slide-1.jpg";
 import ImageSlide2 from "public/images/desktop/image-slide-2.jpg";
@@ -11,30 +9,30 @@ import ImageSlide3 from "public/images/desktop/image-slide-3.jpg";
 import { BsChevronCompactLeft } from '@react-icons/all-files/bs/BsChevronCompactLeft';
 import { BsChevronCompactRight } from '@react-icons/all-files/bs/BsChevronCompactRight'
 
-// Desktop
+// Desktop Images
 const carouselItems = [
     {
         title: "Brand naming & guidelines",
         image: {
-            src: ImageSlide1,
-            title: "Lean Product Roadmap",
-            subtitle: "2019 project",
+            src: "/images/desktop/image-slide-1-desktop-min.jpg",
+            title: "Brand Identity Roadmap",
+            subtitle: "2023 project",
         },
     },
     {
         title: "Brand identity & merchandise",
         image: {
-            src: ImageSlide2,
+            src: "/images/desktop/image-slide-2.jpg",
             title: "New Majestic Hotel",
-            subtitle: "2018 project",
+            subtitle: "2023 project",
         },
     },
     {
         title: "Brand identity & web design",
         image: {
-            src: ImageSlide3,
-            title: "Crypto Dashboard",
-            subtitle: "2016 project",
+            src: "/images/desktop/image-slide-3-desktop-min.jpg",
+            title: "Website Development",
+            subtitle: "2023 project",
         },
     },
 ];
@@ -96,9 +94,6 @@ function Slider() {
                     </div>
                 </div>
 
-
-
-
                 <div>
                     {/* Carousel Image */}
                     <Image
@@ -113,11 +108,12 @@ function Slider() {
                     {/* Carouse Title and Sub-Title */}
                     <article className='relative text-white lg:flex lg:justify-end'>
                         <div className='absolute lg:-top-20 lg:text-lg lg:mr-8 drop-shadow-xl'>
-                            <h1 className="font-semibold" id="carousel-content-title">
+                            <h1 className="font-semibold text-stone-400" id="carousel-content-title">
                                 {carouselItems[selectedIndex].image.title}
                             </h1>
                             <p
                                 id="carousel-content-subtitle"
+                                className=' text-stone-400'
                             >
                                 {carouselItems[selectedIndex].image.subtitle}
                             </p>
