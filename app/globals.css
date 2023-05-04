@@ -2,40 +2,42 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Navbar */
 /* Desktop */
 @media (min-width: 1024px) {
-    nav {
-      background-image: -webkit-gradient(
-          linear,
-          left top,
-          right top,
-          color-stop(0.5, #fffbeb),
-          color-stop(0.5, #fcd34d)
-      );
-      background-image: -o-linear-gradient(right, #fffbeb 40%, #fcd34d 40%);
-      background-image: -moz-linear-gradient(right, #fffbeb 40%, #fcd34d 40%);
-      background-image: -webkit-linear-gradient(right, #fffbeb 40%, #fcd34d 40%);
-      background-image: -ms-linear-gradient(right, #fffbeb 40%, #fcd34d 40%);
-      background-image: linear-gradient(to right, #fffbeb 40%, #fcd34d 40%);
-    }
+  nav {
+    background-image: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      color-stop(0.5, #fffbeb),
+      color-stop(0.5, #fcd34d)
+    );
+    background-image: -o-linear-gradient(right, #fffbeb 40%, #fcd34d 40%);
+    background-image: -moz-linear-gradient(right, #fffbeb 40%, #fcd34d 40%);
+    background-image: -webkit-linear-gradient(right, #fffbeb 40%, #fcd34d 40%);
+    background-image: -ms-linear-gradient(right, #fffbeb 40%, #fcd34d 40%);
+    background-image: linear-gradient(to right, #fffbeb 40%, #fcd34d 40%);
   }
+}
 
 /* Tablet */
-  @media (min-width: 768px) and (max-device-width: 1023px)  {
-    nav {
-      background-image: -webkit-gradient(
-          linear,
-          left top,
-          right top,
-          color-stop(0.5, #fffbeb),
-          color-stop(0.5, #fcd34d)
-      );
-      background-image: -o-linear-gradient(right, #fffbeb 34%, #fcd34d 34%);
-      background-image: -moz-linear-gradient(right, #fffbeb 34%, #fcd34d 34%);
-      background-image: -webkit-linear-gradient(right, #fffbeb 34%, #fcd34d 34%);
-      background-image: -ms-linear-gradient(right, #fffbeb 34%, #fcd34d 34%);
-      background-image: linear-gradient(to right, #fffbeb 34%, #fcd34d 34%);
-    }
+@media (min-width: 768px) and (max-device-width: 1023px) {
+  nav {
+    background-image: -webkit-gradient(
+      linear,
+      left top,
+      right top,
+      color-stop(0.5, #fffbeb),
+      color-stop(0.5, #fcd34d)
+    );
+    background-image: -o-linear-gradient(right, #fffbeb 34%, #fcd34d 34%);
+    background-image: -moz-linear-gradient(right, #fffbeb 34%, #fcd34d 34%);
+    background-image: -webkit-linear-gradient(right, #fffbeb 34%, #fcd34d 34%);
+    background-image: -ms-linear-gradient(right, #fffbeb 34%, #fcd34d 34%);
+    background-image: linear-gradient(to right, #fffbeb 34%, #fcd34d 34%);
   }
+}
 
 
+/* Slider */
