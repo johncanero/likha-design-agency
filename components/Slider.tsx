@@ -163,10 +163,6 @@ function Slider() {
                                 </div>
                             </button>
                         </div>
-
-
-
-
                     </div>
                 </div>
 
@@ -199,8 +195,8 @@ function Slider() {
 
                     {/* Carouse Title and Sub-Title */}
                     {/* Desktop */}
-                    <article className='relative hidden text-white lg:justify-end lg:block'>
-                        <div className='absolute lg:-top-20 lg:text-lg lg:mr-8 drop-shadow-xl'>
+                    <article className='relative text-white lg:justify-end lg:flex'>
+                        <div className='absolute hidden lg:-top-20 lg:text-lg lg:mr-6 lg:block drop-shadow-xl'>
                             <h1 className="font-semibold text-stone-500" id="carousel-content-title">
                                 {carouselItems[selectedIndex].image.title}
                             </h1>
@@ -214,7 +210,7 @@ function Slider() {
                     </article>
 
                     {/* Tablet */}
-                    <article className='relative hidden text-white lg:justify-end lg:block'>
+                    <article className='relative hidden text-white md:block lg:hidden'>
                         <div className='absolute lg:-top-20 lg:text-lg lg:mr-8 drop-shadow-xl'>
                             <h1 className="font-semibold text-stone-500" id="carousel-content-title">
                                 {carouselItemsTablet[selectedIndex].image.title}
