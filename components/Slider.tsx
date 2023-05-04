@@ -1,10 +1,6 @@
 'use client'
 import React, { useState } from 'react'
 import Image from 'next/image';
-// Desktop 
-import ImageSlide1 from "public/images/desktop/image-slide-1.jpg";
-import ImageSlide2 from "public/images/desktop/image-slide-2.jpg";
-import ImageSlide3 from "public/images/desktop/image-slide-3.jpg";
 // Icons
 import { BsChevronCompactLeft } from '@react-icons/all-files/bs/BsChevronCompactLeft';
 import { BsChevronCompactRight } from '@react-icons/all-files/bs/BsChevronCompactRight'
@@ -22,7 +18,7 @@ const carouselItems = [
     {
         title: "Brand identity & merchandise",
         image: {
-            src: "/images/desktop/image-slide-2.jpg",
+            src: "/images/desktop/image-slide-2-desktop-min.jpg",
             title: "New Majestic Hotel",
             subtitle: "2023 project",
         },
@@ -108,12 +104,12 @@ function Slider() {
                     {/* Carouse Title and Sub-Title */}
                     <article className='relative text-white lg:flex lg:justify-end'>
                         <div className='absolute lg:-top-20 lg:text-lg lg:mr-8 drop-shadow-xl'>
-                            <h1 className="font-semibold text-stone-400" id="carousel-content-title">
+                            <h1 className="font-semibold text-stone-500" id="carousel-content-title">
                                 {carouselItems[selectedIndex].image.title}
                             </h1>
                             <p
                                 id="carousel-content-subtitle"
-                                className=' text-stone-400'
+                                className=' text-stone-500'
                             >
                                 {carouselItems[selectedIndex].image.subtitle}
                             </p>
