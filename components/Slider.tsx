@@ -185,8 +185,8 @@ function Slider() {
                         <Image
                             src={carouselItemsTablet[selectedIndex].image.src}
                             alt="carouselItemsTablet"
-                            width={1050}
-                            height={1050}
+                            width={1600}
+                            height={1600}
                             className=""
                             id="carousel-content-img"
                         />
