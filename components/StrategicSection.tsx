@@ -11,8 +11,8 @@ function StrategicSection() {
                     <div className='hidden lg:block'>
                         <Image src="/images/desktop/image-strategic-min (1).jpg"
                             alt="bg-pattern-wave-amber"
-                            width={1600}
-                            height={1600}
+                            width={1760}
+                            height={1760}
                         >
                         </Image>
                     </div>
