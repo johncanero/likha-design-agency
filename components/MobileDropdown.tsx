@@ -5,10 +5,10 @@ import { Fragment, useEffect, useRef, useState } from "react";
 // Icons
 import { GiHamburgerMenu } from "@react-icons/all-files/gi/GiHamburgerMenu";
 import { FaHome } from "@react-icons/all-files/fa/FaHome";
+import { FcAbout } from "@react-icons/all-files/fc/FcAbout"
+import { FaHandHoldingHeart } from "@react-icons/all-files/fa/FaHandHoldingHeart"
+import { ImDrawer } from "@react-icons/all-files/im/ImDrawer"
 import { CgProfile } from "@react-icons/all-files/cg/CgProfile"
-import { BiSearchAlt } from "@react-icons/all-files/bi/BiSearchAlt"
-import { GoLightBulb } from "@react-icons/all-files/go/GoLightBulb"
-import { GiNetworkBars } from "@react-icons/all-files/gi/GiNetworkBars"
 
 function MobileDropdown() {
   const [mounted, setMounted] = useState(false);
@@ -56,7 +56,7 @@ function MobileDropdown() {
                             : "text-gray-900"
                             } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
                         >
-                          {/* React Icon */}
+                          <FaHome size={17} />
                           <span className="ml-2 font-medium font-OpenSans">Home</span>
                         </button>
                       </Link>
@@ -73,7 +73,7 @@ function MobileDropdown() {
                             : "text-gray-900"
                             } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
                         >
-                          {/* React Icon */}
+                          <FcAbout size={17} />
                           <span className="ml-2 font-medium font-OpenSans">About</span>
                         </button>
                       </Link>
@@ -87,14 +87,14 @@ function MobileDropdown() {
                 <div className="px-1 py-1">
                   <Menu.Item>
                     {({ active }: { active: boolean }) => (
-                      <Link href="/online-courses">
+                      <Link href="/services">
                         <button
                           className={`${active
                             ? "bg-amber-300 text-white"
                             : "text-gray-900"
                             } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
                         >
-                          {/* React Icon */}
+                          <FaHandHoldingHeart size={17} />
                           <span className="ml-2 font-medium font-OpenSans">Services</span>
                         </button>
                       </Link>
@@ -111,7 +111,7 @@ function MobileDropdown() {
                             : "text-gray-900"
                             } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
                         >
-                          {/* React Icon */}
+                          <ImDrawer size={17} />
                           <span className="ml-2 font-medium font-OpenSans">Projects</span>
                         </button>
                       </Link>
@@ -132,7 +132,7 @@ function MobileDropdown() {
                             : "text-gray-900"
                             } group flex w-full items-center rounded-md px-2 py-2 text-sm`}
                         >
-                          {/* React Icon */}
+                          <CgProfile size={17} />
                           <span className="ml-2 font-medium font-OpenSans">Profile</span>
                         </button>
                       </Link>
@@ -144,7 +144,7 @@ function MobileDropdown() {
                 <div className="flex justify-center py-1 pb-4 mx-auto">
                   <Menu.Item>
                     {({ active }: { active: boolean }) => (
-                      <Link href="/schedule-call">
+                      <Link href="/">
                         <button className="px-2 py-2 text-sm font-semibold text-center w-44 rounded-xl text-amber-50 bg-stone-900 hover:bg-stone-800">
                           Schedule A Call
                         </button>
