@@ -19,7 +19,7 @@ const carouselItems = [
         title: "Brand identity & merchandise",
         image: {
             src: "/images/desktop/image-slide-2-desktop-min.jpg",
-            title: "New Majestic Hotel",
+            title: "Brand Naming Roadmap",
             subtitle: "2023 project",
         },
     },
@@ -39,22 +39,22 @@ const carouselItemsTablet = [
         title: "Brand naming & guidelines",
         image: {
             src: "/images/tablet/image-slide-1-tablet-min.jpg",
-            title: "Brand Identity Roadmap",
+            title: "Brand Naming Roadmap",
             subtitle: "2023 project",
         },
     },
     {
         title: "Brand identity & merchandise",
         image: {
-            src: "/images/desktop/image-slide-2-desktop-min.jpg",
-            title: "New Majestic Hotel",
+            src: "/images/tablet/image-slide-2-tablet-min.jpg",
+            title: "Brand Identity Clothing",
             subtitle: "2023 project",
         },
     },
     {
         title: "Brand identity & web design",
         image: {
-            src: "/images/desktop/image-slide-3-desktop-min.jpg",
+            src: "/images/tablet/image-slide-3-tablet-min.jpg",
             title: "Website Development",
             subtitle: "2023 project",
         },
@@ -210,8 +210,8 @@ function Slider() {
                     </article>
 
                     {/* Tablet */}
-                    <article className='relative hidden text-white md:block lg:hidden'>
-                        <div className='absolute lg:-top-20 lg:text-lg lg:mr-8 drop-shadow-xl'>
+                    <article className='relative text-white md:justify-end md:flex'>
+                        <div className='absolute hidden md:block lg:hidden md:-top-16 md:text-md md:mr-6 drop-shadow-xl'>
                             <h1 className="font-semibold text-stone-500" id="carousel-content-title">
                                 {carouselItemsTablet[selectedIndex].image.title}
                             </h1>
