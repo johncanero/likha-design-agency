@@ -66,7 +66,7 @@ function MobileDropdown() {
                   {/* About */}
                   <Menu.Item>
                     {({ active }: { active: boolean }) => (
-                      <Link href="/about">
+                      <Link href="/">
                         <button
                           className={`${active
                             ? "bg-amber-300 text-white"
@@ -87,7 +87,7 @@ function MobileDropdown() {
                 <div className="px-1 py-1">
                   <Menu.Item>
                     {({ active }: { active: boolean }) => (
-                      <Link href="/services">
+                      <Link href="/">
                         <button
                           className={`${active
                             ? "bg-amber-300 text-white"
@@ -104,7 +104,7 @@ function MobileDropdown() {
                   {/* Projects */}
                   <Menu.Item>
                     {({ active }: { active: boolean }) => (
-                      <Link href="/projects">
+                      <Link href="/">
                         <button
                           className={`${active
                             ? "bg-amber-300 text-white"
@@ -125,7 +125,7 @@ function MobileDropdown() {
                   {/* Profile */}
                   <Menu.Item>
                     {({ active }: { active: boolean }) => (
-                      <Link href="/profile">
+                      <Link href="/">
                         <button
                           className={`${active
                             ? "bg-amber-300 text-white"
