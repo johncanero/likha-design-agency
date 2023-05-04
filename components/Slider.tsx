@@ -62,7 +62,6 @@ const carouselItemsTablet = [
 ];
 
 // Tablet
-
 function Slider() {
 
     const [selectedIndex, setSelectedIndex] = useState<number>(0);
