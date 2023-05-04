@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { BsChevronCompactLeft } from '@react-icons/all-files/bs/BsChevronCompactLeft';
 import { BsChevronCompactRight } from '@react-icons/all-files/bs/BsChevronCompactRight'
 
-// Desktop Images
+// Desktop 
 const carouselItems = [
     {
         title: "Brand naming & guidelines",
@@ -61,7 +61,35 @@ const carouselItemsTablet = [
     },
 ];
 
-// Tablet
+// Mobile
+const carouselItemsMobile = [
+    {
+        title: "Brand naming & guidelines",
+        image: {
+            src: "/images/mobile/image-slide-1.jpg",
+            title: "Brand Naming Roadmap",
+            subtitle: "2023 project",
+        },
+    },
+    {
+        title: "Brand identity & merchandise",
+        image: {
+            src: "/images/mobile/image-slide-2.jpg",
+            title: "Brand Identity Clothing",
+            subtitle: "2023 project",
+        },
+    },
+    {
+        title: "Brand identity & web design",
+        image: {
+            src: "/images/mobile/image-slide-3.jpg",
+            title: "Website Development",
+            subtitle: "2023 project",
+        },
+    },
+];
+
+
 function Slider() {
 
     const [selectedIndex, setSelectedIndex] = useState<number>(0);
@@ -78,7 +106,20 @@ function Slider() {
         setSelectedIndex(newIndex);
     };
 
+    // Tablet
     const selectImageTablet = (offset: number) => {
+        let newIndex = selectedIndex + offset;
+        if (newIndex < 0) {
+            newIndex = carouselItemsTablet.length - 1;
+        } else if (newIndex >= carouselItemsTablet.length) {
+            newIndex = 0;
+        }
+
+        setSelectedIndex(newIndex);
+    };
+
+    // Tablet
+    const selectImageMobile = (offset: number) => {
         let newIndex = selectedIndex + offset;
         if (newIndex < 0) {
             newIndex = carouselItemsTablet.length - 1;
@@ -107,6 +148,7 @@ function Slider() {
                             {carouselItemsTablet[selectedIndex].title}
                         </div>
 
+                        {/* Mobile Carousel */}
 
                         {/* Desktop Icon Arrows */}
                         <div className='hidden mt-2 lg:block'>
@@ -146,7 +188,7 @@ function Slider() {
                                 onClick={() => selectImageTablet(-1)}
                             >
                                 {/* Left Arrpw */}
-                                <div className='absolute p-2 text-2xl text-white rounded-full cursor-pointer group-hover:bloc md:ml-16 bg-black/20'>
+                                <div className='absolute p-2 text-2xl text-white rounded-full cursor-pointer group-hover:bloc md:ml-16 bg-black/20 outline outline-offset-1 outline-amber-300'>
                                     <BsChevronCompactLeft size={32} className='text-amber-300' />
                                 </div>
                             </button>
@@ -158,7 +200,7 @@ function Slider() {
                                 onClick={() => selectImageTablet(1)}
                             >
                                 {/* Right Arrow */}
-                                <div className='absolute p-2 text-2xl text-white rounded-full cursor-pointer md:ml-32 group-hover:block bg-black/20'>
+                                <div className='absolute p-2 text-2xl text-white rounded-full cursor-pointer md:ml-32 group-hover:block bg-black/20 outline outline-offset-1 outline-amber-300'>
                                     <BsChevronCompactRight size={32} className='text-amber-300' />
                                 </div>
                             </button>
@@ -223,11 +265,44 @@ function Slider() {
                             </p>
                         </div>
                     </article>
-
-
-
                 </div>
             </div>
+
+
+            {/* Mobile */}
+            <div className='block px-6 py-16 bg-stone-800 md:hidden'>
+                <div className='relative text-3xl font-bold leading-10 text-white'>
+                    {carouselItemsTablet[selectedIndex].title}
+                </div>
+
+                {/* Mobile Icon Arrows */}
+                <div className='block md:hidden'>
+                    {/* Icon Arrow Previous */}
+                    <button
+                        type="button"
+                        className=""
+                        onClick={() => selectImageTablet(-1)}
+                    >
+                        {/* Left Arrpw */}
+                        <div className='absolute p-2 text-2xl text-white rounded-full cursor-pointer group-hover:block bg-black/20 outline outline-offset-1 outline-amber-300'>
+                            <BsChevronCompactLeft size={32} className='text-amber-300' />
+                        </div> 
+                    </button>
+
+                    {/* Icon Arrow Next */}
+                    <button
+                        type="button"
+                        className=""
+                        onClick={() => selectImageTablet(1)}
+                    >
+                        {/* Right Arrow */}
+                        <div className='absolute p-2 ml-16 text-2xl text-white rounded-full cursor-pointer group-hover:block bg-black/20 outline outline-offset-1 outline-amber-300'>
+                            <BsChevronCompactRight size={32} className='text-amber-300' />
+                        </div>
+                    </button>
+                </div>
+            </div>
+
         </section>
     )
 }
