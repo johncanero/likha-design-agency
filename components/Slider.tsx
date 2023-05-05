@@ -66,7 +66,7 @@ const carouselItemsMobile = [
     {
         title: "Brand naming & guidelines",
         image: {
-            src: "/images/mobile/image-slide-1.jpg",
+            src: "/images/mobile/image-slide-1-mobile.jpg",
             title: "Brand Naming Roadmap",
             subtitle: "2023 project",
         },
@@ -74,7 +74,7 @@ const carouselItemsMobile = [
     {
         title: "Brand identity & merchandise",
         image: {
-            src: "/images/mobile/image-slide-2.jpg",
+            src: "/images/mobile/image-slide-2-mobile.jpg",
             title: "Brand Identity Clothing",
             subtitle: "2023 project",
         },
@@ -82,7 +82,7 @@ const carouselItemsMobile = [
     {
         title: "Brand identity & web design",
         image: {
-            src: "/images/mobile/image-slide-3.jpg",
+            src: "/images/mobile/image-slide-3-mobile.jpg",
             title: "Website Development",
             subtitle: "2023 project",
         },
