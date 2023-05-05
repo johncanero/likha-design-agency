@@ -144,7 +144,7 @@ function MobileDropdown() {
                 <div className="flex justify-center py-1 pb-4 mx-auto">
                   <Menu.Item>
                     {({ active }: { active: boolean }) => (
-                      <Link href="/">
+                      <Link href="https://calendly.com/johncanero/likha-design-consultation">
                         <button className="px-2 py-2 text-sm font-semibold text-center w-44 rounded-xl text-amber-50 bg-stone-900 hover:bg-stone-800">
                           Schedule A Call
                         </button>

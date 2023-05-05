@@ -37,7 +37,7 @@ function Header() {
                             <Link href="/" rel="noopener noreferrer" className='mt-4 font-medium text-black hover:text-stone-700' passHref>About</Link>
                             <Link href="/" rel="noopener noreferrer" className='mt-4 font-medium text-black hover:text-stone-700' passHref>Service</Link>
                             <Link href="/" rel="noopener noreferrer" className='mt-4 font-medium text-black hover:text-stone-700' passHref>Projects</Link>
-                            <Link href="/">
+                            <Link href="https://calendly.com/johncanero/likha-design-consultation" target="_blank" rel="noopener noreferrer">
                                 <button className="font-bold md:px-4 md:py-3 lg:px-8 lg:py-5 rounded-xl text-amber-50 bg-stone-900 border-stone-700 hover:bg-stone-800">
                                     Schedule A Call
                                 </button>

@@ -31,11 +31,11 @@ function Footer() {
                             x: 0,
                             opacity: 1,
                         }}
-                        className="w-8/12 text-xl font-semibold md:text-3xl md:w-6/12 lg:text-5xl lg:w-5/12"
+                        className="w-8/12 md:w-6/12 lg:w-5/12"
                     >
-                        <h2>Let's build something great together.</h2>
+                        <h2 className="text-xl font-bold md:text-3xl lg:text-5xl">Let's build something great together.</h2>
                     </motion.div>
-                    <Link href="/" className="hidden md:block">
+                    <Link href="https://calendly.com/johncanero/likha-design-consultation" target="_blank" rel="noopener noreferrer" className="hidden md:block">
                         <button className="font-bold border-2 md:px-4 md:py-3 lg:px-8 lg:py-5 rounded-xl text-amber-50 bg-stone-900 border-stone-700 hover:bg-stone-800">
                             Schedule A Call
                         </button>
