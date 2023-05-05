@@ -4,6 +4,8 @@ import Image from 'next/image';
 // Icons
 import { BsChevronCompactLeft } from '@react-icons/all-files/bs/BsChevronCompactLeft';
 import { BsChevronCompactRight } from '@react-icons/all-files/bs/BsChevronCompactRight'
+// Framer Motion
+import { motion } from "framer-motion"
 
 // Desktop 
 const carouselItems = [
@@ -139,14 +141,26 @@ function Slider() {
                     <div>
                         {/* carouseItems title */}
                         {/* Desktop */}
-                        <div className='relative hidden font-bold leading-10 text-white lg:block lg:text-6xl lg:max-w-xl lg:-right-60 lg:mt-60'>
+                        <motion.div
+                            initial={{ opacity: 0 }}
+                            transition={{
+                                duration: 1,
+                            }}
+                            whileInView={{ opacity: 1 }}
+                            className='relative hidden font-bold leading-10 text-white lg:block lg:text-6xl lg:max-w-xl lg:-right-60 lg:mt-60'>
                             {carouselItems[selectedIndex].title}
-                        </div>
+                        </motion.div>
 
                         {/* Tablet */}
-                        <div className='relative hidden text-3xl font-bold leading-10 text-white lg:hidden md:block md:text-4xl md:mt-36 md:-right-20'>
+                        <motion.div
+                            initial={{ opacity: 0 }}
+                            transition={{
+                                duration: 1,
+                            }}
+                            whileInView={{ opacity: 1 }}
+                            className='relative hidden text-3xl font-bold leading-10 text-white lg:hidden md:block md:text-4xl md:mt-36 md:-right-20'>
                             {carouselItemsTablet[selectedIndex].title}
-                        </div>
+                        </motion.div>
 
                         {/* Mobile Carousel */}
 
@@ -283,9 +297,15 @@ function Slider() {
                 </div>
 
                 <div className='px-6 pt-10 pb-20'>
-                    <div className='relative text-3xl font-bold leading-10 text-white'>
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        transition={{
+                            duration: 1,
+                        }}
+                        whileInView={{ opacity: 1 }}
+                        className='relative text-3xl font-bold leading-10 text-white'>
                         {carouselItemsMobile[selectedIndex].title}
-                    </div>
+                    </motion.div>
                     {/* Mobile Icon Arrows */}
                     <div className='block md:hidden'>
                         {/* Icon Arrow Previous */}

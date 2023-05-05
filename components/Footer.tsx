@@ -1,6 +1,9 @@
 /* eslint-disable react/no-unescaped-entities */
+'use client'
 import Link from "next/link"
 import Image from "next/image"
+// Framer Motion
+import { motion } from "framer-motion"
 
 function Footer() {
     return (
@@ -16,7 +19,22 @@ function Footer() {
                         >
                         </Image>
                     </div>
-                    <h2 className="w-8/12 text-xl font-semibold md:text-3xl md:w-6/12 lg:text-5xl lg:w-5/12">Let's build something great together.</h2>
+                    <motion.div
+                        initial={{
+                            x: -200,
+                            opacity: 0,
+                        }}
+                        transition={{
+                            duration: 1,
+                        }}
+                        whileInView={{
+                            x: 0,
+                            opacity: 1,
+                        }}
+                        className="w-8/12 text-xl font-semibold md:text-3xl md:w-6/12 lg:text-5xl lg:w-5/12"
+                    >
+                        <h2>Let's build something great together.</h2>
+                    </motion.div>
                     <Link href="/" className="hidden md:block">
                         <button className="font-bold border-2 md:px-4 md:py-3 lg:px-8 lg:py-5 rounded-xl text-amber-50 bg-stone-900 border-stone-700 hover:bg-stone-800">
                             Schedule A Call

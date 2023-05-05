@@ -38,8 +38,8 @@ function Hero() {
                     <motion.div
                         initial={{ opacity: 0 }}
                         transition={{
-                            delay: 1.5, 
-                            duration: 1.2,
+                            delay: 1, 
+                            duration: 1,
                         }}
                         whileInView={{ opacity: 1 }}
                     >
