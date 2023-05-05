@@ -118,12 +118,12 @@ function Slider() {
         setSelectedIndex(newIndex);
     };
 
-    // Tablet
+    // Mobile
     const selectImageMobile = (offset: number) => {
         let newIndex = selectedIndex + offset;
         if (newIndex < 0) {
-            newIndex = carouselItemsTablet.length - 1;
-        } else if (newIndex >= carouselItemsTablet.length) {
+            newIndex = carouselItemsMobile.length - 1;
+        } else if (newIndex >= carouselItemsMobile.length) {
             newIndex = 0;
         }
 
@@ -270,36 +270,48 @@ function Slider() {
 
 
             {/* Mobile */}
-            <div className='block px-6 py-16 bg-stone-800 md:hidden'>
-                <div className='relative text-3xl font-bold leading-10 text-white'>
-                    {carouselItemsTablet[selectedIndex].title}
+            <div className='block bg-stone-800 md:hidden'>
+                <div className='block md:hidden'>
+                    <Image
+                        src={carouselItemsMobile[selectedIndex].image.src}
+                        alt="carouselItemsMobile"
+                        width={1600}
+                        height={1600}
+                        className=""
+                        id="carousel-content-img"
+                    />
                 </div>
 
-                {/* Mobile Icon Arrows */}
-                <div className='block md:hidden'>
-                    {/* Icon Arrow Previous */}
-                    <button
-                        type="button"
-                        className=""
-                        onClick={() => selectImageTablet(-1)}
-                    >
-                        {/* Left Arrpw */}
-                        <div className='absolute p-2 text-2xl text-white rounded-full cursor-pointer group-hover:block bg-black/20 outline outline-offset-1 outline-amber-300'>
-                            <BsChevronCompactLeft size={32} className='text-amber-300' />
-                        </div> 
-                    </button>
+                <div className='px-6 pt-10 pb-20'>
+                    <div className='relative text-3xl font-bold leading-10 text-white'>
+                        {carouselItemsMobile[selectedIndex].title}
+                    </div>
+                    {/* Mobile Icon Arrows */}
+                    <div className='block md:hidden'>
+                        {/* Icon Arrow Previous */}
+                        <button
+                            type="button"
+                            className=""
+                            onClick={() => selectImageMobile(-1)}
+                        >
+                            {/* Left Arrpw */}
+                            <div className='absolute p-2 text-2xl text-white rounded-full cursor-pointer group-hover:block bg-black/20 outline outline-offset-1 outline-amber-300'>
+                                <BsChevronCompactLeft size={32} className='text-amber-300' />
+                            </div>
+                        </button>
 
-                    {/* Icon Arrow Next */}
-                    <button
-                        type="button"
-                        className=""
-                        onClick={() => selectImageTablet(1)}
-                    >
-                        {/* Right Arrow */}
-                        <div className='absolute p-2 ml-16 text-2xl text-white rounded-full cursor-pointer group-hover:block bg-black/20 outline outline-offset-1 outline-amber-300'>
-                            <BsChevronCompactRight size={32} className='text-amber-300' />
-                        </div>
-                    </button>
+                        {/* Icon Arrow Next */}
+                        <button
+                            type="button"
+                            className=""
+                            onClick={() => selectImageMobile(1)}
+                        >
+                            {/* Right Arrow */}
+                            <div className='absolute p-2 ml-16 text-2xl text-white rounded-full cursor-pointer group-hover:block bg-black/20 outline outline-offset-1 outline-amber-300'>
+                                <BsChevronCompactRight size={32} className='text-amber-300' />
+                            </div>
+                        </button>
+                    </div>
                 </div>
             </div>
 
