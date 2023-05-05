@@ -21,8 +21,8 @@ function Hero() {
                 <div className='max-w-sm px-6 mt-8 md:mt-10 md:mx-0 md:ml-10 lg:ml-72 lg:mt-24 md:max-w-lg lg:max-w-xl lg:mr-10'>
                     <motion.div
                         initial={{
-                            x: -500,
-                            opacity: 40,
+                            x: -200,
+                            opacity: 0,
                         }}
                         transition={{
                             duration: 1,
