@@ -1,10 +1,12 @@
+'use client'
 import Image from "next/image"
 import Link from "next/link"
+// Framer Motion
+import { motion } from "framer-motion"
 
 function Hero() {
     return (
         <div>
-            {/* Hero Section*/}
             <div className='md:flex md:justify-between'>
                 {/* Mobile Hero Image*/}
                 <div className='block md:hidden'>
@@ -17,13 +19,37 @@ function Hero() {
                 </div>
 
                 <div className='max-w-sm px-6 mt-8 md:mt-10 md:mx-0 md:ml-10 lg:ml-72 lg:mt-24 md:max-w-lg lg:max-w-xl lg:mr-10'>
-                    <h2 className='text-4xl font-bold md:pr-4 lg:pr-0 md:text-5xl lg:text-6xl'>Branding & website design agency</h2>
+                    <motion.div
+                        initial={{
+                            x: -500,
+                            opacity: 40,
+                        }}
+                        transition={{
+                            delay: 1, 
+                            duration: 1,
+                        }}
+                        whileInView={{
+                            x: 0,
+                            opacity: 1,
+                        }}
+                    >
+                        <h2 className='text-4xl font-bold md:pr-4 lg:pr-0 md:text-5xl lg:text-6xl'>Branding & website design agency</h2>
+                    </motion.div>
                     <p className='mt-5 lg:mt-7 md:text-sm lg:text-lg md:mr-8 lg:mr-0'>We specialize in visual storytelling by creating cohesive brand and website design solutions for small businesses, giving lasting impressions to audiences in a digital world.</p>
-                    <Link href="/" rel="noopener noreferrer" passHref>
-                        <button className="px-4 py-3 mt-6 font-bold border-2 lg:px-7 lg:mt-6 lg:py-4 rounded-xl text-amber-50 border-stone-700 bg-stone-900 hover:bg-stone-800">
-                            Learn More
-                        </button>
-                    </Link>
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        transition={{
+                            delay: 2, 
+                            duration: 1.2,
+                        }}
+                        whileInView={{ opacity: 1 }}
+                    >
+                        <Link href="/" rel="noopener noreferrer" passHref>
+                            <button className="px-4 py-3 mt-6 font-bold border-2 lg:px-7 lg:mt-6 lg:py-4 rounded-xl text-amber-50 border-stone-700 bg-stone-900 hover:bg-stone-800">
+                                Learn More
+                            </button>
+                        </Link>
+                    </motion.div>
                 </div>
 
                 {/* Desktop Hero Image */}

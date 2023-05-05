@@ -1,8 +1,11 @@
+'use client'
 import Link from 'next/link'
 import Image from 'next/image'
 import MobileDropdown from './MobileDropdown'
 // Dark Mode Button
 import DarkModeButton from './DarkModeButton'
+// Framer Motion
+import { motion } from "framer-motion"
 
 function Header() {
     return (
@@ -10,7 +13,13 @@ function Header() {
             <nav className='px-6 py-6 md:px-10 md:py-7 lg:px-80 lg:py-14'>
                 <div className="container flex items-center justify-between mx-auto">
                     {/* Likha Desig nAgency - Brand Logo & Name */}
-                    <div>
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        transition={{
+                            duration: 1,
+                        }}
+                        whileInView={{ opacity: 1 }}
+                    >
                         <Link href="/" rel="noopener noreferrer" className='flex gap-2'>
                             <Image src="/images/likhaLogo.png"
                                 alt="bg-pattern-wave-amber"
@@ -20,7 +29,7 @@ function Header() {
                             </Image>
                             <h1 className='text-4xl font-bold dark:text-white md:block md:dark:text-black'>Likha</h1>
                         </Link>
-                    </div>
+                    </motion.div>
 
                     <div className='flex'>
                         {/* Desktop and Tablet */}
