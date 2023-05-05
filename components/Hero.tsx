@@ -25,7 +25,6 @@ function Hero() {
                             opacity: 40,
                         }}
                         transition={{
-                            delay: 1, 
                             duration: 1,
                         }}
                         whileInView={{
