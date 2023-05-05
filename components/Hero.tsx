@@ -38,7 +38,7 @@ function Hero() {
                     <motion.div
                         initial={{ opacity: 0 }}
                         transition={{
-                            delay: 2, 
+                            delay: 1.5, 
                             duration: 1.2,
                         }}
                         whileInView={{ opacity: 1 }}
