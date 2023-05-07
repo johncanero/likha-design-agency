@@ -32,7 +32,7 @@ function Hero() {
                             opacity: 1,
                         }}
                     >
-                        <h2 className='text-4xl font-bold md:pr-4 lg:pr-0 md:text-5xl lg:text-6xl'>Branding & website design agency</h2>
+                        <h2 className='text-4xl font-bold md:pr-4 lg:pr-0 md:text-5xl lg:text-7xl'>Branding & website design agency</h2>
                     </motion.div>
                     <p className='mt-5 lg:mt-7 md:text-sm lg:text-lg md:mr-8 lg:mr-0'>We specialize in visual storytelling by creating cohesive brand and website design solutions for small businesses, giving lasting impressions to audiences in a digital world.</p>
                     <motion.div
