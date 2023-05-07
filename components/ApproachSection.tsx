@@ -20,7 +20,7 @@ function ApproachSection() {
                         opacity: 1,
                     }}
                     className="hidden md:block">
-                    <h2 className='relative z-10 font-bold md:text-4xl lg:text-6xl md:mt-60 md:-right-16 lg:-right-80 lg:mt-96 lg:pr-48 md:text-stone-800 dark:text-white'>Our approach for creating a winning brand</h2>
+                    <h2 className='relative z-10 font-bold md:text-4xl lg:text-6xl md:mt-60 md:-right-20 lg:-right-72 lg:mt-96 lg:pr-48 md:text-stone-800 dark:text-white'>Our approach for creating a winning brand</h2>
                 </motion.div>
 
                 <div className='relative bg-amber-300 md:py-20 lg:pt-40 lg:pb-40'>
