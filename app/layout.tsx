@@ -28,19 +28,21 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
-  
+
   return (
-    <html lang="en">
+    <html lang="en" className='h-full antialiased scroll-smooth'>
       <Providers>
-        <body className='transition-all duration-700 bg-yellow-50 dark:bg-stone-900'>
-          <div className={poppins.className}>
+        {/* font */}
+        <div className={poppins.className}>
+          {/* body */}
+          <body className='flex flex-col h-full min-h-screen transition-all duration-700 bg-yellow-50 dark:bg-stone-900'>
             <Header />
-            <div>
+            <main className='flex-grow'>
               {children}
-            </div>
+            </main>
             <Footer />
-          </div>
-        </body>
+          </body>
+        </div>
       </Providers>
     </html>
   )
