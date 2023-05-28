@@ -18,7 +18,7 @@ function DarkModeButton() {
 
 	const currentTheme = theme === 'system' ? systemTheme : theme;
 	return (
-		<div className='md:ml-4 md:mt-4 lg:ml-5'>
+		<div className='md:ml-3 md:mt-3 lg:mt-4'>
 			{currentTheme === 'light' ? (
 				<MoonIcon
 					className="w-6 h-6 cursor-pointer text-stone-700"

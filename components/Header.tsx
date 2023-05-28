@@ -13,13 +13,14 @@ function Header() {
         <div>
             <nav className='px-6 py-6 md:px-10 md:py-7 lg:px-80 lg:py-14'>
                 <div className="container flex items-center justify-between mx-auto">
-                    {/* Likha Desig nAgency - Brand Logo & Name */}
+                    {/* Left Column */}
                     <motion.div
                         initial={{ opacity: 0 }}
                         transition={{
                             duration: 1,
                         }}
                         whileInView={{ opacity: 1 }}
+                        className='flex-1'
                     >
                         <Link href="/" rel="noopener noreferrer" className='flex gap-2'>
                             <Image src="/images/likhaLogo.png"
@@ -33,23 +34,24 @@ function Header() {
                         </Link>
                     </motion.div>
 
-                    <div className='flex'>
+                    {/* Right Column */}
+                    <div className='flex-2'>
                         {/* Desktop and Tablet */}
                         <div className='hidden md:flex md:gap-6 lg:gap-12'>
-                            <Link href="/about" rel="noopener noreferrer" className='mt-4 font-medium text-black lg:text-lg hover:text-stone-700' passHref>About</Link>
-                            <Link href="/services" rel="noopener noreferrer" className='mt-4 font-medium text-black lg:text-lg hover:text-stone-700' passHref>Services</Link>
-                            <Link href="/projects" rel="noopener noreferrer" className='mt-4 font-medium text-black lg:text-lg hover:text-stone-700' passHref>Projects</Link>
+                            <Link href="/about" rel="noopener noreferrer" className='font-medium text-black md:mt-3 lg:mt-4 lg:text-lg hover:text-stone-700' passHref>About</Link>
+                            <Link href="/services" rel="noopener noreferrer" className='font-medium text-black md:mt-3 lg:mt-4 lg:text-lg hover:text-stone-700' passHref>Services</Link>
+                            <Link href="/projects" rel="noopener noreferrer" className='font-medium text-black md:mt-3 lg:mt-4 lg:text-lg hover:text-stone-700' passHref>Projects</Link>
                             <Link href="https://calendly.com/johncanero/likha-design-consultation" target="_blank" rel="noopener noreferrer">
                                 <button className="font-bold md:px-4 md:py-3 lg:px-8 lg:py-5 rounded-xl text-amber-50 bg-stone-900 border-stone-700 hover:bg-stone-800">
                                     Schedule A Call
                                 </button>
                             </Link>
+                            <div className='flex gap-4 md:mt-0 md:gap-0'>
+                                <DarkModeButton />
+                            </div>
                         </div>
+                        <MobileDropdown />
 
-                        <div className='flex gap-4 md:mt-0 md:gap-0'>
-                            <DarkModeButton />
-                            <MobileDropdown />
-                        </div>
                     </div>
                 </div>
             </nav>
