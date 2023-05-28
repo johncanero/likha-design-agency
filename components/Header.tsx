@@ -6,7 +6,6 @@ import MobileDropdown from './MobileDropdown'
 import DarkModeButton from './DarkModeButton'
 // Framer Motion
 import { motion } from "framer-motion"
-import dynamic from "next/dynamic";
 
 
 function Header() {
@@ -50,7 +49,6 @@ function Header() {
                         <div className='flex gap-4 md:mt-0 md:gap-0'>
                             <DarkModeButton />
                             <MobileDropdown />
-                            {/* NextAuth Sign In / Login / */}
                         </div>
                     </div>
                 </div>
@@ -59,4 +57,5 @@ function Header() {
     )
 }
 
-export default dynamic (() => Promise.resolve(Header), {ssr: false})
+export default Header;
+

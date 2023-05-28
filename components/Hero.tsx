@@ -3,7 +3,6 @@ import Image from "next/image"
 import Link from "next/link"
 // Framer Motion
 import { motion } from "framer-motion"
-import dynamic from "next/dynamic";
 
 function Hero() {
     return (
@@ -124,4 +123,4 @@ function Hero() {
     )
 }
 
-export default dynamic (() => Promise.resolve(Hero), {ssr: false})
+export default Hero;

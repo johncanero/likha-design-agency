@@ -173,9 +173,9 @@ function Slider() {
                                 onClick={() => selectImage(-1)}
                             >
                                 {/* Left Arrpw */}
-                                <div className='absolute p-2 text-2xl text-white rounded-full cursor-pointer lg:ml-60 group-hover:block bg-black/20'>
+                                <span className='absolute p-2 text-2xl text-white rounded-full cursor-pointer lg:ml-60 group-hover:block bg-black/20'>
                                     <BsChevronCompactLeft size={32} className='text-amber-300' />
-                                </div>
+                                </span>
                             </button>
 
                             {/* Icon Arrow Next */}
@@ -185,9 +185,9 @@ function Slider() {
                                 onClick={() => selectImage(1)}
                             >
                                 {/* Right Arrow */}
-                                <div className='absolute p-2 text-2xl text-white rounded-full cursor-pointer group-hover:block lg:ml-80 bg-black/20'>
+                                <span className='absolute p-2 text-2xl text-white rounded-full cursor-pointer group-hover:block lg:ml-80 bg-black/20'>
                                     <BsChevronCompactRight size={32} className='text-amber-300' />
-                                </div>
+                                </span>
                             </button>
                         </div>
 
@@ -201,10 +201,10 @@ function Slider() {
                                 className=""
                                 onClick={() => selectImageTablet(-1)}
                             >
-                                {/* Left Arrpw */}
-                                <div className='absolute p-2 text-2xl text-white rounded-full cursor-pointer group-hover:bloc md:ml-16 bg-black/20 outline outline-offset-1 outline-amber-300'>
+                                {/* Left Arrow */}
+                                <span className='absolute p-2 text-2xl text-white rounded-full cursor-pointer group-hover:bloc md:ml-16 bg-black/20 outline outline-offset-1 outline-amber-300'>
                                     <BsChevronCompactLeft size={32} className='text-amber-300' />
-                                </div>
+                                </span>
                             </button>
 
                             {/* Icon Arrow Next */}
@@ -214,9 +214,9 @@ function Slider() {
                                 onClick={() => selectImageTablet(1)}
                             >
                                 {/* Right Arrow */}
-                                <div className='absolute p-2 text-2xl text-white rounded-full cursor-pointer md:ml-32 group-hover:block bg-black/20 outline outline-offset-1 outline-amber-300'>
+                                <span className='absolute p-2 text-2xl text-white rounded-full cursor-pointer md:ml-32 group-hover:block bg-black/20 outline outline-offset-1 outline-amber-300'>
                                     <BsChevronCompactRight size={32} className='text-amber-300' />
-                                </div>
+                                </span>
                             </button>
                         </div>
                     </div>
@@ -315,9 +315,9 @@ function Slider() {
                             onClick={() => selectImageMobile(-1)}
                         >
                             {/* Left Arrpw */}
-                            <div className='absolute p-2 text-2xl text-white rounded-full cursor-pointer group-hover:block bg-black/20 outline outline-offset-1 outline-amber-300'>
+                            <span className='absolute p-2 text-2xl text-white rounded-full cursor-pointer group-hover:block bg-black/20 outline outline-offset-1 outline-amber-300'>
                                 <BsChevronCompactLeft size={32} className='text-amber-300' />
-                            </div>
+                            </span>
                         </button>
 
                         {/* Icon Arrow Next */}
@@ -327,14 +327,13 @@ function Slider() {
                             onClick={() => selectImageMobile(1)}
                         >
                             {/* Right Arrow */}
-                            <div className='absolute p-2 ml-16 text-2xl text-white rounded-full cursor-pointer group-hover:block bg-black/20 outline outline-offset-1 outline-amber-300'>
+                            <span className='absolute p-2 ml-16 text-2xl text-white rounded-full cursor-pointer group-hover:block bg-black/20 outline outline-offset-1 outline-amber-300'>
                                 <BsChevronCompactRight size={32} className='text-amber-300' />
-                            </div>
+                            </span>
                         </button>
                     </div>
                 </div>
             </div>
-
         </section>
     )
 }
