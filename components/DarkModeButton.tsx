@@ -2,6 +2,9 @@
 import { useTheme } from 'next-themes';
 import { useState, useEffect } from 'react';
 import { SunIcon, MoonIcon } from '@heroicons/react/24/solid';
+import dynamic from "next/dynamic";
+
+
 function DarkModeButton() {
 	const [mounted, setMounted] = useState(false);
 	const { systemTheme, theme, setTheme } = useTheme();
@@ -32,4 +35,5 @@ function DarkModeButton() {
 		</div>
 	);
 }
-export default DarkModeButton;
+
+export default dynamic (() => Promise.resolve(DarkModeButton), {ssr: false})

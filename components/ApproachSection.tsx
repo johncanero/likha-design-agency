@@ -64,11 +64,6 @@ function ApproachSection() {
                     </div>
                 </div>
             </div>
-
-
-
-
-
         </div>
     )
 }

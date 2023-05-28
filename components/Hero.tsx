@@ -3,6 +3,7 @@ import Image from "next/image"
 import Link from "next/link"
 // Framer Motion
 import { motion } from "framer-motion"
+import dynamic from "next/dynamic";
 
 function Hero() {
     return (
@@ -38,7 +39,7 @@ function Hero() {
                     <motion.div
                         initial={{ opacity: 0 }}
                         transition={{
-                            delay: 1, 
+                            delay: 1,
                             duration: 1,
                         }}
                         whileInView={{ opacity: 1 }}
@@ -49,6 +50,54 @@ function Hero() {
                             </button>
                         </Link>
                     </motion.div>
+
+
+                    <motion.div
+                        initial={{ opacity: 0 }}
+                        transition={{
+                            delay: 0.4,
+                            duration: 0.4,
+                        }}
+                        whileInView={{ opacity: 1 }}
+                        className="flex gap-5 mt-6 md:mt-4 lg:mt-10">
+                        <div>
+                            <Link href="https://upskillhub-by-johncanero.vercel.app/" target="_blank" rel="noopener noreferrer" passHref>
+                                <Image src="/images/desktop/upskillhubTitle2.png"
+                                    alt="upskill-hub-title"
+                                    width={200}
+                                    height={200}
+                                    className="opacity-90 dark:opacity-50"
+                                >
+                                </Image>
+                            </Link>
+                        </div>
+
+                        <div>
+                            <Link href="https://lead-digital-by-johncanero.vercel.app/" target="_blank" rel="noopener noreferrer" passHref>
+                                <Image src="/images/desktop/leadDigitalTitle2.png"
+                                    alt="lead-digital-title"
+                                    width={120}
+                                    height={200}
+                                    className="opacity-90 dark:opacity-50"
+                                >
+                                </Image>
+                            </Link>
+                        </div>
+
+
+                        <div>
+                            <Link href="https://tech-jam-by-johncanero.vercel.app/" target="_blank" rel="noopener noreferrer" passHref>
+                                <Image src="/images/desktop/techJamTitle3.png"
+                                    alt="tech-jam-title"
+                                    width={200}
+                                    height={200}
+                                    className="opacity-90 dark:opacity-50"
+                                >
+                                </Image>
+                            </Link>
+                        </div>
+                    </motion.div>
+
                 </div>
 
                 {/* Desktop Hero Image */}
@@ -75,4 +124,4 @@ function Hero() {
     )
 }
 
-export default Hero
+export default dynamic (() => Promise.resolve(Hero), {ssr: false})

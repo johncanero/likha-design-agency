@@ -6,6 +6,8 @@ import MobileDropdown from './MobileDropdown'
 import DarkModeButton from './DarkModeButton'
 // Framer Motion
 import { motion } from "framer-motion"
+import dynamic from "next/dynamic";
+
 
 function Header() {
     return (
@@ -24,7 +26,8 @@ function Header() {
                             <Image src="/images/likhaLogo.png"
                                 alt="bg-pattern-wave-amber"
                                 width={40}
-                                height={10}
+                                height={40}
+                                style={{ height: 'auto' }}
                             >
                             </Image>
                             <h1 className='text-4xl font-bold lg:text-5xl dark:text-white md:block md:dark:text-black'>Likha</h1>
@@ -52,10 +55,8 @@ function Header() {
                     </div>
                 </div>
             </nav>
-
-            {/* Mobile */}
         </div>
     )
 }
 
-export default Header
+export default dynamic (() => Promise.resolve(Header), {ssr: false})
