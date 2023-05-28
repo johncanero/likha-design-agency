@@ -7,7 +7,7 @@ import { motion } from "framer-motion"
 function Hero() {
     return (
         <div>
-            <div className='md:flex md:justify-between'>
+            <div className='md:flex'>
                 {/* Mobile Hero Image*/}
                 <div className='block md:hidden'>
                     <Image src="/images/mobile/image-hero-mobile.jpg"
@@ -18,7 +18,8 @@ function Hero() {
                     </Image>
                 </div>
 
-                <div className='max-w-sm px-6 mt-8 md:mt-10 md:mx-0 md:ml-10 lg:ml-72 lg:mt-24 md:max-w-lg lg:max-w-xl lg:mr-10'>
+                {/* Left Column */}
+                <div className='flex-1 max-w-sm px-6 mt-8 md:mt-10 md:mx-0 md:ml-10 lg:ml-72 lg:mt-24 md:max-w-lg lg:max-w-2xl'>
                     <motion.div
                         initial={{
                             x: -200,
@@ -43,7 +44,7 @@ function Hero() {
                         }}
                         whileInView={{ opacity: 1 }}
                     >
-                        <Link href="/" rel="noopener noreferrer" passHref>
+                        <Link href="https://johncanero.com/" rel="noopener noreferrer" passHref>
                             <button className="px-4 py-3 mt-6 font-bold border-2 lg:px-7 lg:mt-6 lg:py-4 rounded-xl text-amber-50 border-stone-700 bg-stone-900 hover:bg-stone-800">
                                 Learn More
                             </button>
@@ -96,27 +97,29 @@ function Hero() {
                             </Link>
                         </div>
                     </motion.div>
-
                 </div>
 
-                {/* Desktop Hero Image */}
-                <div className='hidden lg:block'>
-                    <Image src="/images/desktop/image-hero-desktop3-min.jpg"
-                        alt="bg-pattern-wave-amber"
-                        width={1400}
-                        height={1400}
-                    >
-                    </Image>
-                </div>
 
-                {/* Tablet Hero Image */}
-                <div className='hidden md:block lg:hidden'>
-                    <Image src="/images/tablet/image-hero-md2.jpg"
-                        alt="bg-pattern-wave-amber"
-                        width={1100}
-                        height={1100}
-                    >
-                    </Image>
+                {/* Right Column */}
+                <div className="flex-1">
+                    <div className='hidden lg:block'>
+                        <Image src="/images/desktop/image-hero-desktop3-min.jpg"
+                            alt="bg-pattern-wave-amber"
+                            width={1400}
+                            height={1400}
+                        >
+                        </Image>
+                    </div>
+
+
+                    <div className='hidden md:block lg:hidden'>
+                        <Image src="/images/tablet/image-hero-md2.jpg"
+                            alt="bg-pattern-wave-amber"
+                            width={100}
+                            height={1100}
+                        >
+                        </Image>
+                    </div>
                 </div>
             </div>
         </div>

@@ -7,23 +7,27 @@ function ApproachSection() {
         <div>
             <div className='md:flex md:justify-between'>
                 {/* Desktop and Tablet */}
-                <motion.div
-                    initial={{
-                        x: -200,
-                        opacity: 0,
-                    }}
-                    transition={{
-                        duration: 1,
-                    }}
-                    whileInView={{
-                        x: 0,
-                        opacity: 1,
-                    }}
-                    className="hidden md:block">
-                    <h2 className='relative z-10 font-bold md:text-4xl lg:text-6xl md:mt-60 md:-right-20 lg:-right-72 lg:mt-96 lg:pr-48 md:text-stone-800 dark:text-white'>Our approach for creating a winning brand</h2>
-                </motion.div>
-
-                <div className='relative bg-amber-300 md:py-20 lg:pt-40 lg:pb-40'>
+                {/*  clasLeft Column */}
+                <div className="flex-1">
+                    <motion.div
+                        initial={{
+                            x: -200,
+                            opacity: 0,
+                        }}
+                        transition={{
+                            duration: 1,
+                        }}
+                        whileInView={{
+                            x: 0,
+                            opacity: 1,
+                        }}
+                        className="hidden md:block">
+                        <h2 className='relative z-10 font-bold md:text-4xl lg:text-6xl md:mt-60 md:-right-20 lg:-right-72 lg:mt-96 lg:pr-48 md:text-stone-800 dark:text-white'>Our approach for creating a winning brand</h2>
+                    </motion.div>
+                </div>
+                
+                {/* Right Column */}
+                <div className='relative flex-1 bg-amber-300 md:py-20 lg:pt-40 lg:pb-40'>
                     <div className='px-6 py-20 md:py-0 lg:px-52 md:px-24'>
                         {/* Mobile */}
                         <motion.div
@@ -63,6 +67,7 @@ function ApproachSection() {
                         </div>
                     </div>
                 </div>
+
             </div>
         </div>
     )

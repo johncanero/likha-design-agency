@@ -137,9 +137,8 @@ function Slider() {
         <section>
             <div className='flex md:justify-center '>
                 {/* First Column */}
-                <div className='relative w-full bg-stone-800'>
+                <div className='relative flex-1 w-full bg-stone-800'>
                     <div>
-                        {/* carouseItems title */}
                         {/* Desktop */}
                         <motion.div
                             initial={{ opacity: 0 }}
@@ -222,8 +221,7 @@ function Slider() {
                     </div>
                 </div>
 
-                <div>
-                    {/* Carousel Image */}
+                <div className='flex-1'>
                     {/* Desktop */}
                     <div className='hidden lg:block'>
                         <Image
