@@ -59,7 +59,7 @@ function Hero() {
                             duration: 0.4,
                         }}
                         whileInView={{ opacity: 1 }}
-                        className="flex gap-5 mt-6 md:mt-4 lg:mt-10">
+                        className="flex gap-5 mt-6 md:mt-6 md:mb-6 lg:mb-0 lg:mt-10">
                         <div>
                             <Link href="https://upskillhub-by-johncanero.vercel.app/" target="_blank" rel="noopener noreferrer" passHref>
                                 <Image src="/images/desktop/upskillhubTitle2.png"
@@ -111,11 +111,11 @@ function Hero() {
                         </Image>
                     </div>
 
-
+                    {/* Tablet */}
                     <div className='hidden md:block lg:hidden'>
                         <Image src="/images/tablet/image-hero-md2.jpg"
                             alt="bg-pattern-wave-amber"
-                            width={100}
+                            width={1100}
                             height={1100}
                         >
                         </Image>
