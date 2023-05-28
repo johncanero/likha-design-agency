@@ -201,7 +201,7 @@ function Slider() {
                                 onClick={() => selectImageTablet(-1)}
                             >
                                 {/* Left Arrow */}
-                                <span className='absolute p-2 text-2xl text-white rounded-full cursor-pointer group-hover:bloc md:ml-16 bg-black/20 outline outline-offset-1 outline-amber-300'>
+                                <span className='absolute p-2 text-2xl text-white rounded-full cursor-pointer group-hover:bloc md:ml-16 bg-black/20'>
                                     <BsChevronCompactLeft size={32} className='text-amber-300' />
                                 </span>
                             </button>
@@ -213,7 +213,7 @@ function Slider() {
                                 onClick={() => selectImageTablet(1)}
                             >
                                 {/* Right Arrow */}
-                                <span className='absolute p-2 text-2xl text-white rounded-full cursor-pointer md:ml-32 group-hover:block bg-black/20 outline outline-offset-1 outline-amber-300'>
+                                <span className='absolute p-2 text-2xl text-white rounded-full cursor-pointer md:ml-32 group-hover:block bg-black/20'>
                                     <BsChevronCompactRight size={32} className='text-amber-300' />
                                 </span>
                             </button>
