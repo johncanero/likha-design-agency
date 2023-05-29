@@ -9,6 +9,7 @@ import { FcAbout } from "@react-icons/all-files/fc/FcAbout"
 import { FaHandHoldingHeart } from "@react-icons/all-files/fa/FaHandHoldingHeart"
 import { ImDrawer } from "@react-icons/all-files/im/ImDrawer"
 import { CgProfile } from "@react-icons/all-files/cg/CgProfile"
+import DarkModeButton from "./DarkModeButton";
 
 function MobileDropdown() {
   const [mounted, setMounted] = useState(false);
@@ -24,7 +25,8 @@ function MobileDropdown() {
           <Menu as="div" className="relative inline-block text-left">
             {/* Toggle Button */}
             <div>
-              <Menu.Button className="w-full text-neutral-900">
+              <Menu.Button className="flex gap-4 w-full text-neutral-900">
+                <DarkModeButton />
                 <GiHamburgerMenu
                   className="w-6 h-6 dark:text-white"
                   aria-hidden="true"
