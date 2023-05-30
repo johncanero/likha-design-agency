@@ -19,7 +19,7 @@ function Hero() {
                 </div>
 
                 {/* Left Column */}
-                <div className='flex-1 max-w-sm px-6 mt-8 md:mt-10 md:mx-0 md:ml-10 lg:ml-72 lg:mt-24 md:max-w-lg lg:max-w-2xl'>
+                <div className='flex-1 max-w-sm px-6 mt-8 md:mt-10 md:mx-0 md:ml-10 lg:ml-72 lg:mt-24 md:max-w-full lg:max-w-2xl'>
                     <motion.div
                         initial={{
                             x: -200,
@@ -105,8 +105,8 @@ function Hero() {
                     <div className='hidden lg:block'>
                         <Image src="/images/desktop/image-hero-desktop3-min.jpg"
                             alt="bg-pattern-wave-amber"
-                            width={1400}
-                            height={1400}
+                            width={1500}
+                            height={1500}
                         >
                         </Image>
                     </div>
