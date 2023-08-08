@@ -32,17 +32,21 @@ Our design strategy is strategic and focused on collaboration with our clients t
 ## Responsive Design
 
 🪟: [Desktop - Tablet - Mobile]
+![Lead Digital Portfolio](./public/images/responsive/likhaDesignAgencyPortfolio.jpg)
+![Lead Digital - Branding Portfolio](./public/images/responsive/likhaDesignAgency.jpg)
+![Lead Digital - Description Portfolio](./public/images/responsive/likhaDesignAgencyInfo.jpg)
 
-Likha Design Agency
-![Desktop View - Likha Design Agency](./public/images/responsive/likhaDesignAgencyLightMode.png)
-![Desktop View - Likha Design Agency](./public/images/responsive/likhaDesignAgencyDarkMode.png)
-Desktop Responsive Light
-![Desktop View - Likha Design Agency](./public/images/responsive/likhaDesignAgencyDesktop1.jpg)
-Desktop Responsive Light Strategic
-![Desktop View - Likha Design Agency](./public/images/responsive/likhaDesignAgencyDesktop2.jpg)
-Desktop Responsive Light Feature
-![Desktop View - Likha Design Agency](./public/images/responsive/likhaDesignAgencyDesktop3.jpg)
-Tablet Responsive | Light and Dark
-![Tablet View - Likha Design Agency](./public/images/responsive/likhaDesignAgencyTablet.jpg)
-Mobile Responsive | Light and Dark
-![Mobile View - Likha Design Agency](./public/images/responsive/likhaDesignAgencyMobile.jpg)
+![Lead Digital - Mockup Portfolio](./public/images/responsive/likhaMockUpLightMode.jpg)
+![Lead Digital - Mockup Portfolio](./public/images/responsive/likhaMockUpDarkMode.jpg)
+
+![Lead Digital - Mobile Portfolio](./public/images/responsive/likhaMobileLightMode.jpg)
+![Lead Digital - Mobile Portfolio](./public/images/responsive/likhaMobileDarkMode.jpg)
+![Lead Digital - Mobile Portfolio](./public/images/responsive/likhaMobileLightAndDarkMode.jpg)
+
+![Lead Digital - Tablet Portfolio](./public/images/responsive/likhaTabletLightMode.jpg)
+![Lead Digital - Tablet Portfolio](./public/images/responsive/likhaTabletLightMode-1.jpg)
+![Lead Digital - Tablet Portfolio](./public/images/responsive/likhaTabletLightAndDarkMode.jpg)
+
+![Lead Digital - Desktop Portfolio](./public/images/responsive/likhaDesktopLightMode.jpg)
+![Lead Digital - Desktop Portfolio](./public/images/responsive/likhaDesktopDarkMode.jpg)
+![Lead Digital - Desktop Portfolio](./public/images/responsive/likhaDesktopLightAndDarkMode.jpg)
