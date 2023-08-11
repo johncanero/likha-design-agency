@@ -21,12 +21,12 @@ function MobileDropdown() {
   return (
     <div className="block md:hidden">
       <div>
-        <div className="flex">
+        <div className="flex gap-4">
+          <DarkModeButton />
           <Menu as="div" className="relative inline-block text-left">
             {/* Toggle Button */}
             <div>
-              <Menu.Button className="flex gap-4 w-full text-neutral-900">
-                <DarkModeButton />
+              <Menu.Button className="flex w-full gap-4 text-neutral-900">
                 <GiHamburgerMenu
                   className="w-6 h-6 dark:text-white"
                   aria-hidden="true"
